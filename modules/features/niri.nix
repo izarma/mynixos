@@ -13,9 +13,9 @@
         input.keyboard= {
           xkb.layout = "us, ua";
         };
-        spawn-at-startup = [
-          (lib.getExe self'.packages.myNoctalia)
-        ];
+        # spawn-at-startup = [
+        #   (lib.getExe self'.packages.myNoctalia)
+        # ];
         layout.gaps = 5;
         binds = {
           "Mod+Return".spawn-sh =lib.getExe pkgs.ghostty;

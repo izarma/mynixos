@@ -4,4 +4,8 @@
       self.nixosModules.izasusConfiguration
     ];
   };
+
+  perSystem = { system, ... }: {
+      packages.izasus = self.nixosConfigurations.izasus.config.system.build.toplevel;
+    };
 }

@@ -1,1 +1,5 @@
-sudo nixos-rebuild switch -I nixos-config=/home/izarma/mynixos/base-configuration.nix
+## Nix Setup
+
+Asus laptop nix configs.
+
+`just base-o` for base configs `just flake-o` for flake-parts configs

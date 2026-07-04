@@ -140,6 +140,8 @@
     discord
     odin
     asusctl
+    spacetimedb
+    just
 
     pkg-config
     wayland
@@ -156,7 +158,6 @@
     xorg.libXcursor
     xorg.libXi
     xorg.libXrandr
-
   ];
 
   services.tailscale.enable = true;

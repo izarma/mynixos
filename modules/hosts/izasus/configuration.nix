@@ -6,11 +6,10 @@
       [ # Include the results of the hardware scan.
         self.nixosModules.izasusHardware
 	      self.nixosModules.niri
-
+				self.nixosModules.rust
       ];
 
-      nix.settings.experimental-features = [ "nix-command" "flakes" ];
-
+    nix.settings.experimental-features = [ "nix-command" "flakes" ];
     # Bootloader.
     boot.loader.systemd-boot.enable = true;
     boot.loader.efi.canTouchEfiVariables = true;
@@ -139,8 +138,6 @@
       wget
       zed-editor
       git
-      rustup
-      rust-analyzer
       mold
       clang
       tailscale

@@ -4,7 +4,10 @@
 
     flake-parts.url = "github:hercules-ci/flake-parts";
     import-tree.url = "github:vic/import-tree";
-
+    fenix = {
+      url = "github:nix-community/fenix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     wrapper-modules.url = "github:BirdeeHub/nix-wrapper-modules";
   };
 

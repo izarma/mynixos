@@ -1,5 +1,5 @@
-#base-o:
+#base:
 #    sudo nixos-rebuild switch -I nixos-config=/home/izarma/mynixos/base-configuration.nix
 
-flake-o:
+flake:
     sudo nixos-rebuild switch --flake .#izasus

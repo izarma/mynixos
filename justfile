@@ -3,3 +3,6 @@
 
 flake:
     sudo nixos-rebuild switch --flake .#izasus
+
+update:
+    sudo nix flake update

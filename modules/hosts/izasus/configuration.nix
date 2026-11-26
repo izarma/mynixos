@@ -162,7 +162,7 @@
         mold
         clang
         tailscale
-        ghostty
+        alacritty
         aseprite
         discord
         odin
